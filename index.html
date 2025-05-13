@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra boda ~ Alba & Javier</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="./img/icons/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+
+            <div class="logo">
+                <h1>
+                    <a href="./index.html" style="text-decoration: none; color: black; font-family: 'PlayFair';">
+                        A & J
+                    </a>
+
+                </h1>
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="ul_link">
+                    <li class="link">
+                        <a href="#">
+                            INICIO
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="#nosotros">
+                            NOSOTROS
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="#como-llegar">
+                            COMO LLEGAR
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="./confirm.html">
+                            ASISTENCIA
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="./gallery.html">
+                            SUBE TU FOTO
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="#contacto">
+                            CONTACTO
+                        </a>
+                    </li>
+
+                    <li class="link">
+                        <a href="#preguntas-frecuentes">
+                            PREGUNTAS FRECUENTES
+                        </a>
+                    </li>
+            </ul>
+        </nav>
+    </header>
+    <script src="./json/navbar.js"></script>
+    
+    <!--Sonido de la web con boton para pausar o reproducir cuando se quiera-->
+
+  <audio id="miAudio" loop>
+    <source src="./mp3/nuestra-cancion.mp3" type="audio/mpeg" />
+    Tu navegador no soporta audio HTML5.
+  </audio>
+
+   <button id="audio-button" aria-label="Reproducir o pausar música">
+    <svg id="play-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <polygon points="5,3 19,12 5,21"></polygon>
+    </svg>
+    <svg id="pause-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="display: none;">
+      <rect x="6" y="4" width="4" height="16"></rect>
+      <rect x="14" y="4" width="4" height="16"></rect>
+    </svg>
+  </button>
+
+
+
+    <section class="hero-banner">
+
+        <div class="flex-column-title">
+            <div class="h2-title-column">
+                <div class="flex-icon-anillo-text">
+                    <div class="text-boda-bienvenida">
+                        <h2>
+                            ¡Te damos la bienvenida a nuestro gran día 💍!
+                        </h2>
+                    </div>
+                    <!--<div class="icon-anillos">
+                        <img src="./img/icons/anillos-boda.png" alt="icon anillo">&nbsp;-->
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="h1-title-column">
+                <h1>
+                    JAVIER & ALBA
+                </h1>
+            </div>
+        </div>
+
+        <div class="site-text-photo">
+            <div class="site-text">
+                <!--<p>
+                    Sábado, 02 de Mayo de 2026 Capilla de Los Marineros Real Club de Golf, Montequinto 
+                </p>-->
+            <a href="./confirm.html">
+                <button class="button-confirm">
+                        CONFIRMAR ASISTENCIA
+                </button>
+            </a>
+
+            </div>
+            
+            <div class="img-photo">
+
+                <div class="contador-boda">
+                    <h2>
+                        CUENTA ATRÁS PARA EL "SI, QUIERO"
+                    </h2>
+                    <span id="dias">00</span>&nbsp;d&nbsp;:&nbsp;<span id="horas">00</span>&nbsp;h&nbsp;:&nbsp;<span id="minutos">00</span>&nbsp;m&nbsp;:&nbsp;<span id="segundos">00</span>&nbsp;s
+                </div>
+                <img src="./img/banner-nuestra-historia.jpeg" alt="Foto banner hero">
+            </div>
+        </div>
+
+    </section>
+
+    <section class="nuestra-historia">
+
+    <div class="flex-historia-amor" id="nosotros">
+
+        <div class="title-sections">
+            <h2>
+                Como nos llegamos a conocer
+            </h2>
+            <span>
+                Nuestra gran historia de amor
+            </span>
+        </div>
+
+        <div class="text-section-historia-amor">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias omnis repellat, recusandae quisquam ad eligendi maiores quas provident, quasi quo ipsum sapiente officia eveniet neque aut eius aperiam id nihil? <br><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi nemo harum provident vel a. Cumque odit officia temporibus commodi accusantium nostrum suscipit repellat harum molestias, earum laudantium ducimus, voluptatum sunt?<br><br>Luego vino la gran familia, los dos gatos y el perro :).
+            </p>
+        </div>
+
+    </div>
+
+    <div class="flex-img-historia-amor">
+
+        <a href="./img/foto-lanzarote-selfie.jpg" data-lightbox="galeria">
+          <img src="./img/foto-lanzarote-selfie.jpg" alt="">
+        </a>
+        <a href="./img/foto-campo-futbol.jpeg" data-lightbox="galeria">
+          <img src="./img/foto-campo-futbol.jpeg" alt="">
+        </a>
+        <a href="./img/foto-caleta.jpeg" data-lightbox="galeria">
+          <img src="./img/foto-caleta.jpeg" alt="">
+        </a>
+
+      </div>
+    
+    </section>
+
+    
+    <section class="como-llegar" id="como-llegar">
+    
+        <h1>
+            Nos encantaría que fueras testigo de este día tan especial para nosotros...
+        </h1>
+
+        <div class="flex-como-llegar">
+
+            <div class="ceremonia-flex">
+                <div class="img-ceremonia">
+                    <img src="./img/cristo_virgen.jpg" alt="">
+                </div>
+
+                <div class="text-ceremonia">
+                    <h2>
+                       <span>01.</span> CEREMONIA EN IGLESIA
+                    </h2>
+                    <div class="flex-column-icons">
+                    <div class="flex-icon-iglesia">
+                        <div class="icon-iglesia">
+                            <img src="./img/icons/icon-iglesia.svg" alt="icon IGLESIA">
+                        </div>
+                        <div class="text-iglesia">
+                            <a href="https://www.google.com/maps/place/Capilla+de+los+Marineros/@37.3840245,-6.0036672,16z/data=!3m1!4b1!4m6!3m5!1s0xd126c145d40e3cb:0x30a7b0c8cdf541ca!8m2!3d37.3840203!4d-6.0010923!16s%2Fg%2F121fwdtm?entry=ttu&g_ep=EgoyMDI1MDIyNi4xIKXMDSoASAFQAw%3D%3D" target="_blank">
+                                Capilla de Los Marineros (<span>PINCHA AQUÍ PARA LLEGAR 📍</span>)
+                             </a>
+                        </div>
+                    </div>
+                    <div class="flex-icon-iglesia">
+                        <div class="icon-reloj">
+                            <img src="./img/icons/icon-reloj.svg" alt="icon reloj">
+                        </div>
+                        <div class="text-reloj">
+                            02 de Mayo de 2026 a las 12:00h
+                        </div>
+                    </div>
+                    <div class="flex-icon-iglesia">
+                        <div class="icon-camiseta">
+                            <img src="./img/icons/icon-camiseta.svg" alt="icon-camiseta">
+                        </div>
+                        <div class="text-camiseta">
+                            Vestimenta obligatoria: <strong>MEDIA ETIQUETA</strong>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ceremonia-flex-2">
+
+                <div class="text-ceremonia-2">
+                    <h2>
+                        <span>02.</span> BANQUETE
+                    </h2>
+                    <div class="flex-column-icons">
+                    <div class="flex-icon-iglesia">
+                        <div class="icon-iglesia">
+                            <img src="./img/icons/icon-tenedor.svg" alt="icon tenedor">
+                        </div>
+                        <div class="text-iglesia">
+                            <a href="https://www.google.com/maps/place/Real+Club+Sevilla+Golf/@37.3518168,-5.9224028,17z/data=!3m1!4b1!4m6!3m5!1s0xd126f980192379b:0xba7aa6cb139ced06!8m2!3d37.3518126!4d-5.9198279!16s%2Fg%2F122dm2sd?entry=ttu&g_ep=EgoyMDI1MDIyNi4xIKXMDSoASAFQAw%3D%3D" target="_blank">
+                                Real Club De Golf Sevilla (<span>PINCHA AQUÍ PARA LLEGAR 📍</span>)
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex-icon-iglesia">
+                        <div class="icon-reloj">
+                            <img src="./img/icons/icon-reloj.svg" alt="icon reloj">
+                        </div>
+                        <div class="text-reloj">
+                            02 de Mayo de 2026 a las 12:00h
+                        </div>
+                    </div>
+                    <div class="flex-icon-iglesia">
+                        <div class="icon-camiseta">
+                            <img src="./img/icons/icon-camiseta.svg" alt="icon-camiseta">
+                        </div>
+                        <div class="text-camiseta">
+                            Vestimenta obligatoria: <strong>MEDIA ETIQUETA</strong>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="ceremonia-flex">
+                    <div class="img-ceremonia">
+                        <img src="./img/hacienda_club_de_golf_3.jpeg" alt="">
+                    </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="preguntas-frecuentes" id="preguntas-frecuentes">
+
+        <main class="faq-container">
+            <h1>Por si aún tienes alguna duda...</h1>
+            <h4>Preguntas Frecuentes</h4>
+        
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>¿Cúales son los colores prohibidos por los novios?</span>
+                    <span class="arrow fa-solid fa-chevron-down"></span>
+        
+                </button>
+                <div class="faq-answer">
+                    Los colores que han decidido <span>prohibir</span> los novios son: 🔴  ⚫  ⚪  🔵
+                </div>
+                </div>
+        
+                <div class="faq-item">
+                <button class="faq-question">
+                    <span>¿Cómo puedo confirmar mi asistencia al enlace?</span>
+                    <span class="arrow fa-solid fa-chevron-down"></span>
+        
+                </button>
+                <div class="faq-answer">
+                    Para confirmar tu asistencia al enlace deberá ser antes del 2 de Abril de 2026 en el apartado "Asistencia" de la web o pulsando aquí: <strong><a href="./confirm.html" style="color: black;">Confirmar asistencia</a></strong>                                            
+                </div>
+                </div>
+        
+                <div class="faq-item">
+                <button class="faq-question">
+                    <span>¿Hay algún código de vestimenta (dresscode)?</span>
+                    <span class="arrow fa-solid fa-chevron-down"></span>
+        
+                </button>
+                <div class="faq-answer">
+                    El código de vestimenta para este día tan especial es considerado como <strong>"Media etiqueta"</strong>.
+                </div>
+                </div>
+        
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Eres intolerante y/o alérgico a algún alimento?</span>
+                        <span class="arrow fa-solid fa-chevron-down"></span>
+            
+                    </button>
+                    <div class="faq-answer">
+                        No te preocupes, nos adaptamos a tí, queremos que este día lo disfrutes al igual o más que nosotros<strong> comunícanoslo</strong> a la hora de <strong>confirmar</strong> la asistencia.
+                    </div>
+                    </div>
+        
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>¿Cómo puedo desplazarme a la ceremonia y/o banquete?</span>
+                            <span class="arrow fa-solid fa-chevron-down"></span>
+                
+                        </button>
+                        <div class="faq-answer">
+                            Quedarte sin venir no es una opción, para ello hemos contratado el servicio de desplazamiento de <strong>2 autobuses</strong> tanto para la ceremonia como para el banquete, es completamente gratuito para los invitados
+                            si quieres este servicio unicamente tienes que confirmarnoslo a la hora de confirmar asistencia a nuestro enlace.<br>Si lo prefieres también puedes acudir en <strong>vehículo propio</strong> al banquete ya que hay aparcamiento
+                            disponible para invitados.
+                        </div>
+                        </div>
+        
+            </main>
+
+
+    </section>
+
+<footer class="footer-web" id="contacto">
+    <div class="flex-footer">
+        <div class="contactanos">
+            <h2>
+                ¿Alguna duda en concreto?
+            </h2>
+            <p>
+                Llámanos
+                <span><strong>(+34) 691 015 229 - (+34) 666 935 459
+
+                </strong></span>
+            </p>
+                <div class="creador-web-footer">
+                    <p>
+                        2026 ~ Sitio web creado por <strong><a href="https://javierfront.es" target="_blank">JavierFront.es ©</a></strong>
+                    </p>
+                </div>
+
+        </div>
+        <div class="navbar-footer">
+            <ul class="ul_link_footer">
+                <li class="link_footer">
+                    <a href="#">
+                        INICIO
+                    </a>
+                </li>
+                <li class="link_footer">
+                    <a href="#nosotros">
+                        NOSOTROS
+                    </a>
+                </li>
+                <li class="link_footer">
+                    <a href="#como-llegar">
+                        COMO LLEGAR
+                    </a>
+                </li>
+                <li class="link_footer">
+                    <a href="./confirm.html">
+                        ASISTENCIA
+                    </a>
+                </li>
+                <li class="link_footer">
+                    <a href="#contacto">
+                        CONTACTO
+                    </a>
+                </li>
+
+                <li class="link_footer">
+                    <a href="#preguntas-frecuentes">
+                        PREGUNTAS FRECUENTES
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script src="./script/music.js"></script>
+<script src="./script/faq.js"></script>
+<script src="./script/contador-index.js"></script>
+<script src="./script/scroll-.animation.js"></script>
+<script src="./script/navbar.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>

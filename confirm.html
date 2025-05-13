@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación ~ Alba & Javier</title>
+    <link rel="icon" href="./img/icons/favicon.png">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+<header class="header">
+    <nav class="navbar">
+
+        <div class="logo">
+            <h1>
+                <a href="./index.html" style="text-decoration: none; color: black; font-family: 'PlayFair';">
+                    A & J
+                </a>
+
+            </h1>
+        </div>
+
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="ul_link">
+                <li class="link">
+                    <a href="./index.html#">
+                        INICIO
+                    </a>
+                </li>
+                <li class="link">
+                    <a href="./index.html#nosotros">
+                        NOSOTROS
+                    </a>
+                </li>
+                <li class="link">
+                    <a href="./index.html#como-llegar">
+                        COMO LLEGAR
+                    </a>
+                </li>
+                <li class="link">
+                    <a href="#">
+                        ASISTENCIA
+                    </a>
+                </li>
+                <li class="link">
+                    <a href="./gallery.html">
+                        SUBE TU FOTO
+                    </a>
+                </li>
+                <li class="link">
+                    <a href="#contacto">
+                        CONTACTO
+                    </a>
+                </li>
+
+                <li class="link">
+                    <a href="./index.html#preguntas-frecuentes">
+                        PREGUNTAS FRECUENTES
+                    </a>
+                </li>
+        </ul>
+    </nav>
+</header>
+<script src="./script/navbar.js"></script>
+
+    <!--Sonido de la web con boton para pausar o reproducir cuando se quiera-->
+
+    <audio id="miAudio" loop>
+        <source src="./mp3/index-music.mp3" type="audio/mpeg" />
+        Tu navegador no soporta audio HTML5.
+      </audio>
+    
+       <button id="audio-button" aria-label="Reproducir o pausar música">
+        <svg id="play-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <polygon points="5,3 19,12 5,21"></polygon>
+        </svg>
+        <svg id="pause-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="display: none;">
+          <rect x="6" y="4" width="4" height="16"></rect>
+          <rect x="14" y="4" width="4" height="16"></rect>
+        </svg>
+      </button>
+
+<section class="formulario-asistencia">
+    <form>
+        <h2>Confirma tu asistencia a nuestro enlace</h2>
+      
+        <label><input type="radio" name="asistencia" value="si" checked> Sí, voy a ir a la boda</label><br>
+        <label><input type="radio" name="asistencia" value="no"> No, no voy a poder ir a la boda</label>
+      
+        <div class="nombreLabel">
+          <label>Nombre *</label>
+          <input type="text" name="nombre" required>
+        </div>
+      
+        <div class="nombreLabel">
+          <label>Apellidos *</label>
+          <input type="text" name="apellido" required>
+        </div>
+      
+        <div class="nombreLabel">
+          <label>Correo electrónico *</label>
+          <input type="email" name="email" required>
+        </div>
+      
+        <div class="llevoAcompañante">
+          <input type="checkbox" id="acompananteCheckbox">
+          <label for="acompananteCheckbox">Voy a llevar un acompañante</label>
+        </div>
+      
+        <div id="acompananteCampos" style="display: none; margin-top: 10px;">
+          <label>Nombre del acompañante</label>
+          <input type="text" name="nombre_acompanante">
+      
+          <label style="margin-top: 10px;">Apellidos del acompañante</label>
+          <input type="text" name="apellido_acompanante">
+        </div>
+      
+        <div class="transporteUtilizaras">
+          <label>¿Qué transporte utilizarás para acudir? *</label>
+          <div>
+            <input type="checkbox" id="transporte" name="transporte" value="tengo">
+            <label for="transporte">Vehículo propio</label>
+          </div>
+          <div>
+            <input type="checkbox" id="no_se" name="transporte" value="no_se">
+            <label for="no_se">Autobús <strong>(Gratuito)</strong></label>
+          </div>
+        </div>
+      
+        <div class="nombreLabel">
+          <label>¿Tienes alguna intolerancia o alergía <strong>(Gluten, Lactosa...)</strong>?</label>
+          <input type="text" name="alergias">
+        </div>
+        <div class="nombreLabel">
+            <label>Si tienes alguna <strong>canción favorita</strong> y quieres que suene en la boda... <strong>¡Escríbela aquí!</strong></label>
+            <input type="text" name="cancion">
+          </div>
+        <p style="font-weight: 700; color: #797069; margin: 20px 0px; letter-spacing: .5px;">
+            Todos los apartados marcados con el signo * son obligatorios para confirmar la asistencia al enlace matrimonial
+        </p>
+        <button type="submit" style="color: #5a4e45;">Confirmar asistencia</button>
+      </form>
+      <div id="mensajeConfirmacion" style="display: none; margin-top: 2rem; text-align: center; font-size: 18px; font-weight: 600; color: #5a4e45;">
+        ¡Gracias por confirmar tu asistencia!
+      </div>
+
+    
+</section>
+
+<footer class="footer-web" id="contacto">
+    <div class="flex-footer">
+        <div class="contactanos">
+            <h2>
+                ¿Alguna duda en concreto?
+            </h2>
+            <p>
+                Llámanos
+                <span><strong>(+34) 691 015 229 - (+34) 666 935 459
+
+                </strong></span>
+            </p>
+                <div class="creador-web-footer">
+                    <p>
+                        2026 ~ Sitio web creado por <strong><a href="https://javierfront.es" target="_blank">JavierFront.es ©</a></strong>
+                    </p>
+                </div>
+
+        </div>
+        <div class="navbar-footer">
+            <ul class="ul_link_footer">
+                <li class="link_footer">
+                    <a href="./index.html#">
+                        INICIO
+                    </a>
+                </li>
+                <li class="link_footer">
+                    <a href="./index.html#nosotros">
+                        NOSOTROS
+                    </a>
+                </li>
+                <li class="link_footer">
+                    <a href="./index.html#como-llegar">
+                        COMO LLEGAR
+                    </a>
+                </li>
+                <li class="link_footer">
+                    <a href="#">
+                        ASISTENCIA
+                    </a>
+                </li>
+                <li class="link_footer">
+                    <a href="#contacto">
+                        CONTACTO
+                    </a>
+                </li>
+
+                <li class="link_footer">
+                    <a href="./index.html#preguntas-frecuentes">
+                        PREGUNTAS FRECUENTES
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script src="./script/music.js"></script>
+<script src="./script/asistencia.js"></script>
+<script src="./script/faq.js"></script>
+<script src="./script/contador-index.js"></script>
+<script src="./script/scroll-.animation.js"></script>
+<script src="./script/navbar.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox-plus-jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>
